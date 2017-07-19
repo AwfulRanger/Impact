@@ -162,7 +162,7 @@ function GM:CreateItemSpawns( force )
 	for i = 1, #entities do
 		
 		local ent = entities[ i ]
-		if IsValid( ent ) == true and IsValid( ent:GetOwner() ) != true and ( self:IsEntityItem( ent ) == true or ent:IsWeapon() == true ) then
+		if IsValid( ent ) == true and IsValid( ent:GetOwner() ) != true and ( self:IsEntityItem( ent ) == true or ent:IsWeapon() == true ) and ent:GetNW2Bool( "DM_ItemSpawn" ) != true then
 			
 			local spawn = ents.Create( "dm_itemspawn" )
 			if IsValid( spawn ) == true then

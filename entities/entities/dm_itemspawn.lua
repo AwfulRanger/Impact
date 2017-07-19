@@ -40,6 +40,7 @@ function ENT:Initialize()
 			if IsValid( ent ) == true then
 				
 				ent:SetPos( self:GetPos() )
+				ent:SetNW2Bool( "DM_ItemSpawn", true )
 				ent:Spawn()
 				self:SetModel( ent:GetModel() )
 				self:SetIsWeapon( ent:IsWeapon() )
