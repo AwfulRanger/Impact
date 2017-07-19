@@ -545,6 +545,14 @@ function GM:PlayerCollideDamage( ply, dmg, vel )
 	local preplayercollidedamage = hook.Run( "DM_PrePlayerCollideDamage", ply, dmg, vel )
 	if preplayercollidedamage != nil then return preplayercollidedamage end
 	
+	local armor = ply:Armor()
+	for i = 1, armor do
+		
+		if dmg:GetDamage() > 0 then dmg:SubtractDamage( math.min( dmg:GetDamage(), 2 ) ) end
+		ply:SetArmor( armor - 1 )
+		
+	end
+	
 	ply:TakeDamageInfo( dmg )
 	
 	local postplayercollidedamage = hook.Run( "DM_PostPlayerCollideDamage", ply, dmg, vel )

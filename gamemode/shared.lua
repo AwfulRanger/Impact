@@ -2,7 +2,6 @@
 --TODO
 important:
 spawns for css maps
-make armor block damage
 
 
 
