@@ -7,6 +7,7 @@ if SERVER then include( "sv_player.lua" ) end
 CreateConVar( "dm_respawntime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "How long until the player is automatically respawned" )
 CreateConVar( "dm_teambalance", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Prevent team stacking" )
 CreateConVar( "dm_friendlyfire", "0", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Allow friendly fire" )
+CreateConVar( "dm_flashlight", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Enable flashlight" )
 
 local plymeta = FindMetaTable( "Player" )
 function plymeta:SetScore( score )

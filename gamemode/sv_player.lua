@@ -16,6 +16,12 @@ concommand.Add( "dm_forceassign", function( ply, cmd, args, arg )
 	
 end, "Force assign players to teams", FCVAR_SERVER_CAN_EXECUTE )
 
+function GM:PlayerSwitchFlashlight( ply, toggle )
+	
+	return GetConVar( "dm_flashlight" ):GetBool() == true or toggle == false
+	
+end
+
 function GM:PlayerSetModel( ply )
 	
 	ply:SetModel( player_manager.TranslatePlayerModel( ply:GetInfo( "cl_playermodel" ) ) )
