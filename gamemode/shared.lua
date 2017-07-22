@@ -5,8 +5,6 @@ spawns for css maps
 
 
 
-custom killfeed
-
 stop the scraping sounds the hull makes
 ]]--
 DeriveGamemode( "base" )

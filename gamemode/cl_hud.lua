@@ -801,3 +801,94 @@ function GM:ScoreboardHide()
 	end
 	
 end
+
+
+
+GM.DeathNotices = {}
+
+function GM:AddDeathNotice( attacker, ateam, inflictor, victim, vteam )
+	
+	table.insert( self.DeathNotices, {
+		
+		time = CurTime(),
+		attacker = attacker,
+		ateam = ateam,
+		inflictor = inflictor,
+		victim = victim,
+		vteam = vteam,
+		
+	} )
+	
+end
+
+function GM:DrawDeathNotice( xr, yr )
+	
+	local ply = LocalPlayer()
+	
+	local border = math.Round( ScrH() * 0.005 )
+	local bgcolor = Color( 0, 0, 0, 150 )
+	local bordercolor = ply:GetTeamColor()
+	local altcolor = Color( 255, 255, 255, 255 )
+	
+	local cx = ScrW() * 0.975
+	local y = ScrH() * 0.025
+	
+	surface.SetFont( "DM_BoldTiny" )
+	
+	for i = 1, #self.DeathNotices do
+		
+		local notice = self.DeathNotices[ i ]
+		
+		if notice != nil then
+			
+			if CurTime() > notice.time + 5 then
+				
+				table.remove( self.DeathNotices, i )
+				
+			elseif notice.attacker != nil then
+				
+				local aw, ah = surface.GetTextSize( notice.attacker )
+				local kw, kh = killicon.GetSize( notice.inflictor )
+				local vw, vh = surface.GetTextSize( notice.victim )
+				
+				local w = aw + kw + vw + ( border * 4 )
+				local h = math.max( ah, kh, vh ) + ( border * 2 )
+				
+				local x = cx - w
+				
+				draw.RoundedBoxEx( 16, x - border, y - border, w + ( border * 2 ), h + ( border * 2 ), bordercolor, true, true, true, true )
+				draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, true, true, true, true )
+				
+				DrawShadowText( notice.attacker, x + border, y + ( h * 0.5 ) - ( ah * 0.5 ), team.GetColor( notice.ateam ) )
+				killicon.Draw( x + aw + ( kw * 0.5 ) + ( border * 2 ), y + ( h * 0.5 ), notice.inflictor, 255 )
+				surface.SetFont( "DM_BoldTiny" )
+				DrawShadowText( notice.victim, x + aw + kw + ( border * 3 ), y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
+				
+				y = y + h + border
+				
+			else
+				
+				local kw, kh = killicon.GetSize( notice.inflictor )
+				local vw, vh = surface.GetTextSize( notice.victim )
+				
+				local w = kw + vw + ( border * 3 )
+				local h = math.max( kh, vh ) + ( border * 2 )
+				
+				local x = cx - w
+				
+				draw.RoundedBoxEx( 16, x - border, y - border, w + ( border * 2 ), h + ( border * 2 ), bordercolor, true, true, true, true )
+				draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, true, true, true, true )
+				
+				killicon.Draw( x + ( kw * 0.5 ) + ( border * 1 ), y + ( h * 0.5 ), notice.inflictor, 255 )
+				surface.SetFont( "DM_BoldTiny" )
+				DrawShadowText( notice.victim, x + kw + ( border * 2 ), y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
+				
+				y = y + h + ( border * 3 )
+				
+			end
+			
+		end
+		
+	end
+	
+end
