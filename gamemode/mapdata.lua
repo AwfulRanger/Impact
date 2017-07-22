@@ -1,6 +1,20 @@
 GM.MapData = {}
 
-include( "mapdata/cs_assault.lua" )
+local files = {
+	
+	"mapdata/cs_assault.lua",
+	"mapdata/cs_compound.lua",
+	"mapdata/cs_havana.lua",
+	"mapdata/cs_italy.lua",
+	"mapdata/cs_militia.lua",
+	
+}
+for i = 1, #files do
+	
+	AddCSLuaFile( files[ i ] )
+	include( files[ i ] )
+	
+end
 
 function GM:AddMapSpawns( map, spawns )
 	
