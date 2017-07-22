@@ -2,10 +2,6 @@
 --TODO
 important:
 spawns for css maps
-
-
-
-stop the scraping sounds the hull makes
 ]]--
 DeriveGamemode( "base" )
 

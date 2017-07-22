@@ -21,10 +21,18 @@ function ENT:SetPhysics( min, max )
 		
 		self:PhysicsInit( SOLID_VPHYSICS )
 		--self:PhysicsInit( SOLID_BBOX )
-		self:SetMoveType( MOVETYPE_VPHYSICS )
-		self:SetSolid( SOLID_VPHYSICS )
-		--self:SetSolid( SOLID_NONE )
-		self:SetCollisionGroup( COLLISION_GROUP_DEBRIS )
+		
+	end
+	
+	self:SetMoveType( MOVETYPE_VPHYSICS )
+	self:SetSolid( SOLID_VPHYSICS )
+	--self:SetSolid( SOLID_NONE )
+	self:SetCollisionGroup( COLLISION_GROUP_DEBRIS )
+	
+	local phys = self:GetPhysicsObject()
+	if IsValid( phys ) == true then
+		
+		phys:SetMaterial( "default_silent" )
 		
 	end
 	
