@@ -704,7 +704,7 @@ function GM:ScoreboardShow()
 	if teams == true then
 		
 		self.ScoreboardPanel:SetPos( ( ScrW() * 0.15 ) - border, ( ScrH() * 0.15 ) - border )
-		self.ScoreboardPanel:SetSize( ( ScrW() * 0.7 ) - ( border * 2 ), ( ScrH() * 0.7 ) - ( border * 2 ) )
+		self.ScoreboardPanel:SetSize( ( ScrW() * 0.7 ) + ( border * 2 ), ( ScrH() * 0.7 ) + ( border * 2 ) )
 		self.ScoreboardPanel.Paint = function( panel, w, h )
 			
 			draw.RoundedBoxEx( 16, 0, 0, w * 0.5, h, friendcolor, true, true, true, true )
@@ -718,7 +718,7 @@ function GM:ScoreboardShow()
 	else
 		
 		self.ScoreboardPanel:SetPos( ( ScrW() * 0.325 ) - border, ( ScrH() * 0.15 ) - border )
-		self.ScoreboardPanel:SetSize( ( ScrW() * 0.35 ) - ( border * 2 ), ( ScrH() * 0.7 ) - ( border * 2 ) )
+		self.ScoreboardPanel:SetSize( ( ScrW() * 0.35 ) + ( border * 2 ), ( ScrH() * 0.7 ) + ( border * 2 ) )
 		self.ScoreboardPanel.Paint = function( panel, w, h )
 			
 			draw.RoundedBoxEx( 16, 0, 0, w, h, friendcolor, true, true, true, true )
@@ -733,7 +733,7 @@ function GM:ScoreboardShow()
 	if teams == true then
 		
 		local friendx = border * 2
-		local enemyx = ( ScrW() * 0.35 ) + border
+		local enemyx = ( ScrW() * 0.35 ) + ( border * 3 )
 		local teamy = border * 2
 		
 		local red = vgui.Create( "DScrollPanel" )
