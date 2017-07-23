@@ -1,8 +1,3 @@
---[[
---TODO
-important:
-spawns for css maps
-]]--
 DeriveGamemode( "base" )
 
 DEFINE_BASECLASS( "gamemode_base" )

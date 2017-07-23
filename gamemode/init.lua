@@ -9,38 +9,6 @@ util.AddNetworkString( "DM_State" )
 util.AddNetworkString( "DM_DeathTime" )
 util.AddNetworkString( "DM_ShowButton" )
 
---[[
---DELET THIS
-util.AddNetworkString( "DM_CreateItemSpawn" )
-net.Receive( "DM_CreateItemSpawn", function( len, ply )
-	
-	local pos = ply:GetEyeTrace().HitPos
-	local item = net.ReadString()
-	
-	print( "{" )
-	print( "	" )
-	print( "	Class = \"dm_itemspawn\"," )
-	print( "	Functions = {" )
-	print( "		" )
-	print( "		SetPos = { Vector( " .. math.Round( pos.x ) .. ", " .. math.Round( pos.y ) .. ", " .. math.Round( pos.z ) .. " ) }," )
-	print( "		SetItem = { \"" .. item .. "\" }," )
-	print( "		" )
-	print( "	}," )
-	print( "	" )
-	print( "}" )
-	
-	local ent = ents.Create( "dm_itemspawn" )
-	if IsValid( ent ) == true then
-		
-		ent:SetPos( Vector( math.Round( pos.x ), math.Round( pos.y ), math.Round( pos.z ) ) )
-		ent:SetItem( item )
-		ent:Spawn()
-		
-	end
-	
-end )
-]]--
-
 
 
 function GM:Initialize()
