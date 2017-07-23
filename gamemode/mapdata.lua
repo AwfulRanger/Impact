@@ -7,6 +7,7 @@ local files = {
 	"mapdata/cs_havana.lua",
 	"mapdata/cs_italy.lua",
 	"mapdata/cs_militia.lua",
+	"mapdata/cs_office.lua",
 	
 }
 for i = 1, #files do
