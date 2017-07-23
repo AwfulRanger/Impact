@@ -539,6 +539,7 @@ function GM:OnPlayerCollide( ply, hull, phys, data )
 	dmg:SetDamage( difvel * 0.01 )
 	dmg:SetDamageType( DMG_FALL )
 	local attacker = hull:GetLastAttacker()
+	if IsValid( attacker ) != true then attacker = ply end
 	if IsValid( attacker ) == true then dmg:SetAttacker( attacker ) end
 	local inflictor = hull:GetLastInflictor()
 	if IsValid( inflictor ) == true then dmg:SetInflictor( inflictor ) end
