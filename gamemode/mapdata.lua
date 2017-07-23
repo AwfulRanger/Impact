@@ -19,6 +19,7 @@ local files = {
 	"mapdata/de_port.lua",
 	"mapdata/de_prodigy.lua",
 	"mapdata/de_tides.lua",
+	"mapdata/de_train.lua",
 	
 }
 for i = 1, #files do
