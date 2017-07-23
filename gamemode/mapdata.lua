@@ -14,6 +14,7 @@ local files = {
 	"mapdata/de_dust.lua",
 	"mapdata/de_dust2.lua",
 	"mapdata/de_inferno.lua",
+	"mapdata/de_nuke.lua",
 	
 }
 for i = 1, #files do
