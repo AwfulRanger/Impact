@@ -421,7 +421,10 @@ function GM:GetHelpPanel()
 	rich:InsertColorChange( 255, 255, 255, 255 )
 	
 	rich:AppendText( "Press \"" .. getbind( "gm_showhelp" ) .. "\" to open this help menu\n" )
-	rich:AppendText( "Press \"" .. getbind( "gm_showteam" ) .. "\" to open the teams menu\n" )
+	rich:AppendText( "Press \"" .. getbind( "gm_showteam" ) .. "\" to open the teams menu\n\n" )
+	rich:AppendText( "Weapons have greatly increased knockback, and the only way to deal damage is through physics.\n" )
+	rich:AppendText( "Health slowly regenerates over time.\n" )
+	rich:AppendText( "Weapons and other items respawn automatically after " .. self:GetItemRespawnTime() .. " seconds.\n" )
 	
 	return help
 	
