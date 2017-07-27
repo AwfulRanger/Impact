@@ -4,7 +4,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 737, -1051, 16 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 944, -89, 32 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1514, 437, 16 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -301, 1303, 20 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -728, 1970, 240 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 181, 1374, 248 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -830, 378, 16 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -73, 884, 248 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 851, 1807, 256 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 757, 600, 256 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -83, -121, 256 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -448, 1460, 16 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -434, 1352, 16 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -301, 1587, 256 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 622, 1197, 32 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 654, 1233, 32 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 982, 1574, 16 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "cs_havana" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -256, 6, 16 ) },

@@ -4,7 +4,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -495, -1403, 0 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -946, -922, 0 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1387, -439, -16 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -484, -74, 16 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 260, 87, 0 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 674, -430, 0 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 382, -727, 2 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 670, -387, -128 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -168, -440, 0 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 238, -168, -120 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1245, -1687, 0 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 687, -1660, 0 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 630, 786, -128 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -863, 1207, -96 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1162, 406, 0 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1091, 258, 0 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1097, -394, -142 ) },
@@ -207,7 +207,7 @@ GM.MapData[ "de_tides" ] = {
 		},
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1513, -781, -146 ) },
@@ -219,7 +219,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1303, -376, -16 ) },
@@ -231,7 +231,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -217, 702, -84 ) },
@@ -243,7 +243,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -744, 48, -128 ) },
@@ -255,7 +255,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -440, -461, -16 ) },
@@ -267,7 +267,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 309, 199, 51 ) },
@@ -279,7 +279,7 @@ GM.MapData[ "de_tides" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 803, -1395, -86 ) },

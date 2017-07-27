@@ -4,7 +4,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1908, -1311, -284 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1905, -365, -216 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1936, -757, -328 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1341, 1279, -216 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1103, 1480, -218 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 442, -475, -222 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1004, -634, -222 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 935, -365, -190 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 254, 670, 40 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 33, 225, -68 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -142, 733, -229 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -695, 939, -216 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1922, -1144, -284 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -636, -352, -218 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -965, -409, 16 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -967, 607, 0 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -653, 602, 32 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -962, 1161, -229 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -812, 706, -228 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 37, 1690, -104 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -36, 1711, -104 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1743, -165, -216 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1786, 224, -216 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -605, -525, 16 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -454, -1729, -104 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -949, -1126, -152 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 923, -1540, -205 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_train" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 595, -1023, -360 ) },

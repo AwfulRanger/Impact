@@ -4,7 +4,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -461, -1848, -336 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 313, -1985, -336 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1378, -1479, -331 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1135, -890, -160 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 390, -1395, -280 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 496, -473, -160 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 91, -1079, -224 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 90, 252, -160 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -831, -206, -160 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -424, 703, -160 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1434, 981, -160 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1654, -71, -160 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1502, -509, -160 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1272, 189, -160 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1201, 1165, -401 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -712, 225, -368 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 564, 514, -160 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1637, -798, -240 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1602, -164, -240 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1209, 252, -330 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1192, -761, -328 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -153, -797, -280 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "cs_office" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 88, -401, -160 ) },

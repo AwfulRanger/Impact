@@ -5,9 +5,9 @@ include( "cl_hud.lua" )
 
 CreateConVar( "cl_playercolor", "0.24 0.34 0.41", { FCVAR_ARCHIVE, FCVAR_USERINFO, FCVAR_DONTRECORD }, "The value is a Vector - so between 0-1 - not between 0-255" )
 
-CreateClientConVar( "dm_showmenu", "1", true, false, "Show menu when spawning for the first time" )
+CreateClientConVar( "im_showmenu", "1", true, false, "Show menu when spawning for the first time" )
 
-net.Receive( "DM_State", function()
+net.Receive( "IM_State", function()
 	
 	local gm = GAMEMODE or GM
 	if gm == nil then return end
@@ -17,7 +17,7 @@ net.Receive( "DM_State", function()
 	
 end )
 
-net.Receive( "DM_DeathTime", function()
+net.Receive( "IM_DeathTime", function()
 	
 	local ply = LocalPlayer()
 	
@@ -25,7 +25,7 @@ net.Receive( "DM_DeathTime", function()
 	
 end )
 
-net.Receive( "DM_ShowButton", function()
+net.Receive( "IM_ShowButton", function()
 	
 	local gm = GAMEMODE or GM
 	if gm == nil then return end

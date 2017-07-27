@@ -4,7 +4,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2749, 1396, 80 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2496, 1413, 152 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1699, 1049, 80 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1948, 1011, 152 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1730, 1203, 208 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 492, 1380, 208 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 847, 1386, 214 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 928, 1697, 0 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 393, 1692, 0 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 666, 1526, 0 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1393, 1924, 0 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1589, 1108, 0 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2232, 1220, 0 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 3064, 1218, 0 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 3065, 1004, -56 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2761, 1054, 0 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2829, 142, -160 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1192, 475, -160 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1438, 998, 29 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 458, 1062, 0 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1294, -761, -131 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 711, -428, -160 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 121, 5, -40 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -342, -103, 0 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 158, 1006, 0 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 921, -142, 0 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 826, 749, 0 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 592, -136, 0 ) },
@@ -340,7 +340,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 543, -148, 0 ) },
@@ -352,7 +352,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2258, 1500, 164 ) },
@@ -364,7 +364,7 @@ GM.MapData[ "de_chateau" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2236, 931, 152 ) },

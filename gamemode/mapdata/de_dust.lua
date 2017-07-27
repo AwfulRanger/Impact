@@ -4,7 +4,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 541, -884, 70 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -218, -694, 12 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -549, -1581, 64 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 623, -125, 23 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -960, 205, 32 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -796, -462, 0 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 221, 836, 0 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -800, 828, 0 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1215, 1439, 0 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -605, 1411, 32 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 473, 1301, 32 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 37, 1419, 32 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1891, 1106, 32 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2322, 1095, 32 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1199, 1375, -192 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1864, 2791, 32 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1647, 3554, 0 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -681, 3649, 0 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1405, 2850, 0 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 511, 2093, 96 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 899, 3009, 0 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 116, 3693, 48 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 671, 3757, 48 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1799, 3362, -128 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1369, 3759, 48 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 927, 809, 0 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -386, 258, 0 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1354, 701, 32 ) },
@@ -340,7 +340,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1353, 643, 32 ) },
@@ -352,7 +352,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -305, 2892, 19 ) },
@@ -364,7 +364,7 @@ GM.MapData[ "de_dust" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -607, 2149, 0 ) },

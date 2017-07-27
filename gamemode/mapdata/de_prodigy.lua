@@ -4,7 +4,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1755, -1272, -480 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2306, -692, -480 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 3078, -38, -480 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2403, 947, -384 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1491, 911, -384 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1016, 894, -256 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 833, 538, -256 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 42, 386, -296 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 607, 117, -256 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 90, -563, -204 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 348, -403, -208 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 346, -432, -41 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 599, -297, -310 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 574, -819, -400 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2232, -1512, -160 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2384, -1000, -160 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2909, -709, -160 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1325, -692, -376 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1317, -1077, -288 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1075, -740, -248 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1597, -1030, -336 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1757, -1051, -288 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2226, -224, -288 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2375, -44, -416 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1709, -179, -352 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1972, 152, -288 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2177, -261, -416 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2379, -440, -288 ) },
@@ -340,7 +340,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 905, -1519, -400 ) },
@@ -352,7 +352,7 @@ GM.MapData[ "de_prodigy" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1968, -592, -116 ) },

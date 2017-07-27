@@ -4,7 +4,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2652, -219, 152 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1568, -259, 160 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1064, 1081, 336 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1468, 389, 448 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 57, 260, 512 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -853, -324, 96 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -162, -603, 96 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 126, -829, -64 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 88, 433, 512 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1209, -21, 160 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1365, 18, 368 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 607, 215, 312 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -909, 430, 448 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 729, 650, 192 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 100, 277, 256 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -751, 1216, 336 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -672, 1507, 352 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -823, 2337, 144 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1893, 2272, 224 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1696, 1832, 144 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1132, 1370, 109 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -415, 620, 192 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 231, 551, 256 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 428, 1482, 64 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -209, 946, -5 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 76, -351, -72 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2187, 305, 160 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -849, 1402, 56 ) },
@@ -340,7 +340,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1686, 959, 256 ) },
@@ -352,7 +352,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1540, 108, 160 ) },
@@ -364,7 +364,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1351, 596, 352 ) },
@@ -376,7 +376,7 @@ GM.MapData[ "de_piranesi" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1113, 910, 184 ) },

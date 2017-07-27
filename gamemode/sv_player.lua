@@ -1,6 +1,6 @@
 DEFINE_BASECLASS( "gamemode_base" )
 
-concommand.Add( "dm_forceassign", function( ply, cmd, args, arg )
+concommand.Add( "im_forceassign", function( ply, cmd, args, arg )
 	
 	if IsValid( ply ) == true then return end
 	
@@ -18,7 +18,7 @@ end, "Force assign players to teams", FCVAR_SERVER_CAN_EXECUTE )
 
 function GM:PlayerSwitchFlashlight( ply, toggle )
 	
-	return GetConVar( "dm_flashlight" ):GetBool() == true or toggle == false
+	return GetConVar( "im_flashlight" ):GetBool() == true or toggle == false
 	
 end
 
@@ -90,7 +90,7 @@ function GM:PlayerSpawn( ply )
 	
 	if state == STATE_WAITINGFORPLAYERS or ply:Team() == TEAM_SPECTATOR then return self:PlayerSpawnAsSpectator( ply ) end
 	
-	local hull = ents.Create( "dm_playerhull" )
+	local hull = ents.Create( "im_playerhull" )
 	if IsValid( hull ) == true then
 		
 		hull:SetPos( ply:GetPos() )
@@ -153,7 +153,7 @@ function GM:PostPlayerDeath( ply )
 	
 	if ply.DeathTime != nil then
 		
-		net.Start( "DM_DeathTime" )
+		net.Start( "IM_DeathTime" )
 			
 			net.WriteFloat( ply.DeathTime )
 			
@@ -308,7 +308,7 @@ end
 
 function GM:PlayerShouldTakeDamage( ply, attacker )
 	
-	if GetConVar( "dm_startgod" ):GetBool() == true and self:GetRoundState() == STATE_STARTING then return false end
+	if GetConVar( "im_startgod" ):GetBool() == true and self:GetRoundState() == STATE_STARTING then return false end
 	
 	if ply == attacker or IsValid( attacker ) != true or attacker:IsPlayer() != true or self:GetTeams() != true or ply:Team() != attacker:Team() or self:GetFriendlyFire() == true then return BaseClass.PlayerShouldTakeDamage( self, ply, attacker ) end
 	
@@ -318,7 +318,7 @@ end
 
 function GM:CreateSpawnPoints( force )
 	
-	local preffa, prered, preblue = hook.Run( "DM_PreCreateSpawnPoints", force )
+	local preffa, prered, preblue = hook.Run( "IM_PreCreateSpawnPoints", force )
 	if preffa != nil or prered != nil or preblue != nil then
 		
 		if preffa != nil then self.FFASpawnPoints = preffa end
@@ -395,7 +395,7 @@ function GM:CreateSpawnPoints( force )
 		
 	end
 	
-	local postffa, postred, postblue = hook.Run( "DM_PostCreateSpawnPoints", force )
+	local postffa, postred, postblue = hook.Run( "IM_PostCreateSpawnPoints", force )
 	if postffa != nil or postred != nil or postblue != nil then
 		
 		if postffa != nil then self.FFASpawnPoints = postffa end
@@ -523,7 +523,7 @@ end
 
 function GM:OnPlayerCollide( ply, hull, phys, data )
 	
-	local onplayercollide = hook.Run( "DM_OnPlayerCollide", ply, hull, phys, data )
+	local onplayercollide = hook.Run( "IM_OnPlayerCollide", ply, hull, phys, data )
 	if onplayercollide != nil then return onplayercollide end
 	
 	if IsValid( ply ) != true or IsValid( phys ) != true or data == nil or data.OurOldVelocity == nil then return end
@@ -549,7 +549,7 @@ end
 
 function GM:PlayerCollideDamage( ply, dmg, vel )
 	
-	local preplayercollidedamage = hook.Run( "DM_PrePlayerCollideDamage", ply, dmg, vel )
+	local preplayercollidedamage = hook.Run( "IM_PrePlayerCollideDamage", ply, dmg, vel )
 	if preplayercollidedamage != nil then return preplayercollidedamage end
 	
 	local armor = ply:Armor()
@@ -562,7 +562,7 @@ function GM:PlayerCollideDamage( ply, dmg, vel )
 	
 	ply:TakeDamageInfo( dmg )
 	
-	local postplayercollidedamage = hook.Run( "DM_PostPlayerCollideDamage", ply, dmg, vel )
+	local postplayercollidedamage = hook.Run( "IM_PostPlayerCollideDamage", ply, dmg, vel )
 	if postplayercollidedamage != nil then return postplayercollidedamage end
 	
 end
@@ -612,14 +612,14 @@ end
 
 function GM:PlayerHealthRegen( ply )
 	
-	if ply.DM_HealthRegenTime == nil then ply.DM_HealthRegenTime = 0 end
+	if ply.IM_HealthRegenTime == nil then ply.IM_HealthRegenTime = 0 end
 	
-	if CurTime() > ply.DM_HealthRegenTime then
+	if CurTime() > ply.IM_HealthRegenTime then
 		
 		local hp = ply:Health()
 		if hp < ply:GetMaxHealth() then ply:SetHealth( hp + 1 ) end
 		
-		ply.DM_HealthRegenTime = CurTime() + 1
+		ply.IM_HealthRegenTime = CurTime() + 1
 		
 	end
 	

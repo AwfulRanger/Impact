@@ -4,7 +4,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2695, -1186, -225 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2557, 508, -192 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1782, 1224, -212 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2074, 1026, -227 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1684, -555, -208 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1227, 220, -192 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -427, 709, -208 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 432, 785, -192 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 420, -1094, -225 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1048, -1598, -224 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -244, -1579, -224 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -478, -1100, -525 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 364, 583, -508 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -414, 174, -518 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -20, -472, -510 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1553, 890, -510 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2345, 738, -506 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2335, 402, -287 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 991, 254, -219 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -944, -579, -352 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1123, 734, -192 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 316, -106, -224 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 862, 398, -368 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_aztec" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1738, -264, -226 ) },

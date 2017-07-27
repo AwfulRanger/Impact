@@ -7,8 +7,8 @@ include( "player.lua" )
 AddCSLuaFile( "round.lua" )
 include( "round.lua" )
 
-CreateConVar( "dm_autoitemspawn", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Automatically convert items into item spawns at the start of each round" )
-CreateConVar( "dm_itemrespawntime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Item respawn time" )
+CreateConVar( "im_autoitemspawn", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Automatically convert items into item spawns at the start of each round" )
+CreateConVar( "im_itemrespawntime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Item respawn time" )
 
 GM.Name = "Impact"
 GM.Author = "AwfulRanger"
@@ -60,10 +60,10 @@ end
 
 function GM:GetItemRespawnTime()
 	
-	local itemrespawntime = hook.Run( "DM_GetItemRespawnTime" )
+	local itemrespawntime = hook.Run( "IM_GetItemRespawnTime" )
 	if itemrespawntime != nil then return itemrespawntime end
 	
-	return GetConVar( "dm_itemrespawntime" ):GetFloat()
+	return GetConVar( "im_itemrespawntime" ):GetFloat()
 	
 end
 

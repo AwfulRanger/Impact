@@ -4,7 +4,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2410, 2536, 133 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2211, 2823, 152 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1651, 2574, 160 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1829, 1689, 160 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2389, 1457, 160 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2628, 1143, 160 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2496, 484, 212 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2526, 82, 212 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2546, -177, 80 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2037, -191, 256 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1049, -470, 256 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1050, -174, 256 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1221, -109, 256 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 964, 2965, 128 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 686, 3166, 160 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 100, 2814, 160 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 447, 1928, 128 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 156, 1481, 100 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 85, 823, 70 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 286, 456, 21 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 71, -191, 72 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1612, -332, 256 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 857, -687, 94 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -364, -434, 192 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -390, -95, 192 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 773, 161, 85 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1107, 317, 128 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1366, 736, 128 ) },
@@ -340,7 +340,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1961, 572, 160 ) },
@@ -352,7 +352,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 833, 538, 83 ) },
@@ -364,7 +364,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -363, -120, 2 ) },
@@ -376,7 +376,7 @@ GM.MapData[ "de_inferno" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1498, -425, -9 ) },

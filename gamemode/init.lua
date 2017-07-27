@@ -5,9 +5,9 @@ include( "shared.lua" )
 include( "mapdata.lua" )
 AddCSLuaFile( "cl_hud.lua" )
 
-util.AddNetworkString( "DM_State" )
-util.AddNetworkString( "DM_DeathTime" )
-util.AddNetworkString( "DM_ShowButton" )
+util.AddNetworkString( "IM_State" )
+util.AddNetworkString( "IM_DeathTime" )
+util.AddNetworkString( "IM_ShowButton" )
 
 
 
@@ -20,13 +20,13 @@ end
 
 function GM:SetState( state )
 	
-	local setstate = hook.Run( "DM_SetState", state )
+	local setstate = hook.Run( "IM_SetState", state )
 	if setstate != nil then state = setstate end
 	
 	self.RoundState = state
 	self.RoundTime = CurTime()
 	
-	net.Start( "DM_State" )
+	net.Start( "IM_State" )
 		
 		net.WriteInt( self.RoundState, 32 )
 		net.WriteInt( self.RoundTime, 32 )
@@ -39,7 +39,7 @@ end
 
 function GM:ShowHelp( ply )
 	
-	net.Start( "DM_ShowButton" )
+	net.Start( "IM_ShowButton" )
 		
 		net.WriteInt( 0, 3 )
 		
@@ -49,7 +49,7 @@ end
 
 function GM:ShowTeam( ply )
 	
-	net.Start( "DM_ShowButton" )
+	net.Start( "IM_ShowButton" )
 		
 		net.WriteInt( 1, 3 )
 		
@@ -59,7 +59,7 @@ end
 
 function GM:ShowSpare1( ply )
 	
-	net.Start( "DM_ShowButton" )
+	net.Start( "IM_ShowButton" )
 		
 		net.WriteInt( 2, 3 )
 		
@@ -69,7 +69,7 @@ end
 
 function GM:ShowSpare2( ply )
 	
-	net.Start( "DM_ShowButton" )
+	net.Start( "IM_ShowButton" )
 		
 		net.WriteInt( 3, 3 )
 		
@@ -101,7 +101,7 @@ GM.ItemClasses = {
 
 function GM:IsEntityItem( ent )
 	
-	local isentityitem = hook.Run( "DM_IsEntityItem", ent )
+	local isentityitem = hook.Run( "IM_IsEntityItem", ent )
 	if isentityitem != nil then return isentityitem end
 	
 	if IsValid( ent ) == true and self.ItemClasses[ ent:GetClass() ] != nil then return self.ItemClasses[ ent:GetClass() ] end
@@ -112,10 +112,10 @@ end
 
 function GM:GetAutoItemSpawn()
 	
-	local autoitemspawn = hook.Run( "DM_GetAutoItemSpawn" )
+	local autoitemspawn = hook.Run( "IM_GetAutoItemSpawn" )
 	if autoitemspawn != nil then return autoitemspawn end
 	
-	return GetConVar( "dm_autoitemspawn" ):GetBool()
+	return GetConVar( "im_autoitemspawn" ):GetBool()
 	
 end
 
@@ -123,16 +123,16 @@ function GM:CreateItemSpawns( force )
 	
 	if force != true and self:GetAutoItemSpawn() != true then return end
 	
-	local precreateitemspawns = hook.Run( "DM_PreCreateItemSpawns" )
+	local precreateitemspawns = hook.Run( "IM_PreCreateItemSpawns" )
 	if precreateitemspawns != nil then return precreateitemspawns end
 	
 	local entities = ents.GetAll()
 	for i = 1, #entities do
 		
 		local ent = entities[ i ]
-		if IsValid( ent ) == true and IsValid( ent:GetOwner() ) != true and ( self:IsEntityItem( ent ) == true or ent:IsWeapon() == true ) and ent:GetNW2Bool( "DM_ItemSpawn" ) != true then
+		if IsValid( ent ) == true and IsValid( ent:GetOwner() ) != true and ( self:IsEntityItem( ent ) == true or ent:IsWeapon() == true ) and ent:GetNW2Bool( "IM_ItemSpawn" ) != true then
 			
-			local spawn = ents.Create( "dm_itemspawn" )
+			local spawn = ents.Create( "im_itemspawn" )
 			if IsValid( spawn ) == true then
 				
 				spawn:SetPos( ent:GetPos() )
@@ -148,21 +148,21 @@ function GM:CreateItemSpawns( force )
 		
 	end
 	
-	local postcreateitemspawns = hook.Run( "DM_PostCreateItemSpawns" )
+	local postcreateitemspawns = hook.Run( "IM_PostCreateItemSpawns" )
 	if postcreateitemspawns != nil then return postcreateitemspawns end
 	
 end
 
 function GM:MapSetup()
 	
-	local premapsetup = hook.Run( "DM_PreMapSetup" )
+	local premapsetup = hook.Run( "IM_PreMapSetup" )
 	if premapsetup != nil then return premapsetup end
 	
 	self:ApplyMapData()
 	self:CreateSpawnPoints( true )
 	self:CreateItemSpawns()
 	
-	local postmapsetup = hook.Run( "DM_PostMapSetup" )
+	local postmapsetup = hook.Run( "IM_PostMapSetup" )
 	if postmapsetup != nil then return postmapsetup end
 	
 end

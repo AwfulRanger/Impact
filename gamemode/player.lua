@@ -1,13 +1,13 @@
 DEFINE_BASECLASS( "gamemode_base" )
 
-AddCSLuaFile( "player_class/player_dm.lua" )
-include( "player_class/player_dm.lua" )
+AddCSLuaFile( "player_class/player_im.lua" )
+include( "player_class/player_im.lua" )
 if SERVER then include( "sv_player.lua" ) end
 
-CreateConVar( "dm_respawntime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "How long until the player is automatically respawned" )
-CreateConVar( "dm_teambalance", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Prevent team stacking" )
-CreateConVar( "dm_friendlyfire", "0", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Allow friendly fire" )
-CreateConVar( "dm_flashlight", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Enable flashlight" )
+CreateConVar( "im_respawntime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "How long until the player is automatically respawned" )
+CreateConVar( "im_teambalance", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Prevent team stacking" )
+CreateConVar( "im_friendlyfire", "0", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Allow friendly fire" )
+CreateConVar( "im_flashlight", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Enable flashlight" )
 
 local plymeta = FindMetaTable( "Player" )
 function plymeta:SetScore( score )
@@ -51,18 +51,18 @@ end
 
 function GM:GetRespawnTime()
 	
-	local getrespawntime = hook.Run( "DM_GetRespawnTime" )
+	local getrespawntime = hook.Run( "IM_GetRespawnTime" )
 	if getrespawntime != nil then return getrespawntime end
 	
-	return GetConVar( "dm_respawntime" ):GetFloat()
+	return GetConVar( "im_respawntime" ):GetFloat()
 	
 end
 
 function GM:GetFriendlyFire()
 	
-	local getfriendlyfire = hook.Run( "DM_GetFriendlyFire" )
+	local getfriendlyfire = hook.Run( "IM_GetFriendlyFire" )
 	if getfriendlyfire != nil then return getfriendlyfire end
 	
-	return GetConVar( "dm_friendlyfire" ):GetBool()
+	return GetConVar( "im_friendlyfire" ):GetBool()
 	
 end

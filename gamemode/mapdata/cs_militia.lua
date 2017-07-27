@@ -4,7 +4,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 793, -2303, -189 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2515, -1920, -146 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2559, -1825, -146 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1314, -533, -148 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 331, -900, -171 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 8, -60, -63 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1691, -1400, -130 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -105, 128, 81 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 591, 633, 321 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 559, 1100, -16 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 398, 250, -16 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 279, 569, -16 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 944, 957, -160 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1040, 925, -160 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 585, 1220, -152 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1450, 690, -30 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1166, 588, -24 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1087, 779, -152 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1026, 365, -152 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 46, 1034, -152 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 639, 1085, -152 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 236, 732, -152 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 357, 315, -152 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1288, 106, -159 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 632, -176, -154 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 256, 968, -16 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 695, 705, -16 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 519, 585, -152 ) },
@@ -340,7 +340,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 570, 1786, -316 ) },
@@ -352,7 +352,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 888, 1023, -320 ) },
@@ -364,7 +364,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1935, -394, -320 ) },
@@ -376,7 +376,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 737, -1121, -300 ) },
@@ -388,7 +388,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1919, 424, -320 ) },
@@ -400,7 +400,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1027, -486, -323 ) },
@@ -412,7 +412,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 325, -1450, -373 ) },
@@ -424,7 +424,7 @@ GM.MapData[ "cs_militia" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 424, 1355, -16 ) },

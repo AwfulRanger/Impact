@@ -1,11 +1,11 @@
-CreateConVar( "dm_starttime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Time limit for the start phase" )
-CreateConVar( "dm_ongoingtime", "1200", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Time limit for the ongoing phase. Set to 0 or below for unlimited time" )
-CreateConVar( "dm_endtime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Time limit for the end phase" )
-CreateConVar( "dm_minplayers", "2", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Minimum players to start" )
-CreateConVar( "dm_startfreeze", "0", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Freeze players during the start phase" )
-CreateConVar( "dm_startgod", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Enable godmode on players during the start phase" )
-CreateConVar( "dm_teams", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Team deathmatch or free for all" )
-CreateConVar( "dm_scorelimit", "50", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Score limit. Set to 0 or below for unlimited score" )
+CreateConVar( "im_starttime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Time limit for the start phase" )
+CreateConVar( "im_ongoingtime", "1200", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Time limit for the ongoing phase. Set to 0 or below for unlimited time" )
+CreateConVar( "im_endtime", "10", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Time limit for the end phase" )
+CreateConVar( "im_minplayers", "2", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Minimum players to start" )
+CreateConVar( "im_startfreeze", "0", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Freeze players during the start phase" )
+CreateConVar( "im_startgod", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Enable godmode on players during the start phase" )
+CreateConVar( "im_teams", "1", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Team deathmatch or free for all" )
+CreateConVar( "im_scorelimit", "50", { FCVAR_SERVER_CAN_EXECUTE, FCVAR_REPLICATED, FCVAR_ARCHIVE }, "Score limit. Set to 0 or below for unlimited score" )
 
 STATE_WAITINGFORPLAYERS = 0
 STATE_STARTING = 1
@@ -17,7 +17,7 @@ GM.RoundTime = 0
 
 function GM:GetRoundState()
 	
-	local roundstate = hook.Run( "DM_GetRoundState" )
+	local roundstate = hook.Run( "IM_GetRoundState" )
 	if roundstate != nil then return roundstate end
 	
 	return self.RoundState
@@ -26,7 +26,7 @@ end
 
 function GM:GetRoundTime()
 	
-	local roundtime = hook.Run( "DM_GetRoundTime" )
+	local roundtime = hook.Run( "IM_GetRoundTime" )
 	if roundtime != nil then return roundtime end
 	
 	return self.RoundTime
@@ -35,7 +35,7 @@ end
 
 function GM:GetRoundTimeLimit()
 	
-	local roundtimelimit = hook.Run( "DM_GetRoundTimeLimit" )
+	local roundtimelimit = hook.Run( "IM_GetRoundTimeLimit" )
 	if roundtimelimit != nil then return roundtimelimit end
 	
 	local state = self:GetRoundState()
@@ -62,7 +62,7 @@ end
 
 function GM:StartRound()
 	
-	local prestartround = hook.Run( "DM_PreStartRound" )
+	local prestartround = hook.Run( "IM_PreStartRound" )
 	if prestartround != nil then return prestartround end
 	
 	self:SetState( STATE_STARTING )
@@ -82,8 +82,8 @@ function GM:StartRound()
 		
 		if SERVER and ply:Team() != TEAM_SPECTATOR then
 			
-			local freeze = GetConVar( "dm_startfreeze" ):GetBool()
-			--local god = GetConVar( "dm_startgod" ):GetBool()
+			local freeze = GetConVar( "im_startfreeze" ):GetBool()
+			--local god = GetConVar( "im_startgod" ):GetBool()
 			
 			ply:UnSpectate()
 			ply:Spawn()
@@ -96,14 +96,14 @@ function GM:StartRound()
 		
 	end
 	
-	local poststartround = hook.Run( "DM_PostStartRound" )
+	local poststartround = hook.Run( "IM_PostStartRound" )
 	if poststartround != nil then return poststartround end
 	
 end
 
 function GM:EndWarmup()
 	
-	local preendwarmup = hook.Run( "DM_PreEndWarmup" )
+	local preendwarmup = hook.Run( "IM_PreEndWarmup" )
 	if preendwarmup != nil then return preendwarmup end
 	
 	self:SetState( STATE_ONGOING )
@@ -123,14 +123,14 @@ function GM:EndWarmup()
 		
 	end
 	
-	local postendwarmup = hook.Run( "DM_PostEndWarmup" )
+	local postendwarmup = hook.Run( "IM_PostEndWarmup" )
 	if postendwarmup != nil then return postendwarmup end
 	
 end
 
 function GM:EndRound( winner )
 	
-	local preendround = hook.Run( "DM_PreEndRound" )
+	local preendround = hook.Run( "IM_PreEndRound" )
 	if preendround != nil then return preendround end
 	
 	self:SetState( STATE_ENDING )
@@ -153,68 +153,68 @@ function GM:EndRound( winner )
 		
 	end
 	
-	local postendround = hook.Run( "DM_PostEndRound" )
+	local postendround = hook.Run( "IM_PostEndRound" )
 	if postendround != nil then return postendround end
 	
 end
 
 function GM:GetStartTime()
 	
-	local getstarttime = hook.Run( "DM_GetStartTime" )
+	local getstarttime = hook.Run( "IM_GetStartTime" )
 	if getstarttime != nil then return getstarttime end
 	
-	return GetConVar( "dm_starttime" ):GetFloat()
+	return GetConVar( "im_starttime" ):GetFloat()
 	
 end
 
 function GM:GetOngoingTime()
 	
-	local getongoingtime = hook.Run( "DM_GetOngoingTime" )
+	local getongoingtime = hook.Run( "IM_GetOngoingTime" )
 	if getongoingtime != nil then return getongoingtime end
 	
-	return GetConVar( "dm_ongoingtime" ):GetFloat()
+	return GetConVar( "im_ongoingtime" ):GetFloat()
 	
 end
 
 function GM:GetEndTime()
 	
-	local getendtime = hook.Run( "DM_GetEndTime" )
+	local getendtime = hook.Run( "IM_GetEndTime" )
 	if getendtime != nil then return getendtime end
 	
-	return GetConVar( "dm_endtime" ):GetFloat()
+	return GetConVar( "im_endtime" ):GetFloat()
 	
 end
 
 function GM:GetMinPlayers()
 	
-	local getminplayers = hook.Run( "DM_GetMinPlayers" )
+	local getminplayers = hook.Run( "IM_GetMinPlayers" )
 	if getminplayers != nil then return getminplayers end
 	
-	return GetConVar( "dm_minplayers" ):GetInt()
+	return GetConVar( "im_minplayers" ):GetInt()
 	
 end
 
 function GM:GetTeams()
 	
-	local getteams = hook.Run( "DM_GetTeams" )
+	local getteams = hook.Run( "IM_GetTeams" )
 	if getteams != nil then return getteams end
 	
-	return GetConVar( "dm_teams" ):GetBool()
+	return GetConVar( "im_teams" ):GetBool()
 	
 end
 
 function GM:GetScoreLimit()
 	
-	local getscorelimit = hook.Run( "DM_GetScoreLimit" )
+	local getscorelimit = hook.Run( "IM_GetScoreLimit" )
 	if getscorelimit != nil then return getscorelimit end
 	
-	return GetConVar( "dm_scorelimit" ):GetInt()
+	return GetConVar( "im_scorelimit" ):GetInt()
 	
 end
 
 function GM:WaitForPlayers()
 	
-	local prewaitforplayers = hook.Run( "DM_PreWaitForPlayers" )
+	local prewaitforplayers = hook.Run( "IM_PreWaitForPlayers" )
 	if prewaitforplayers != nil then return prewaitforplayers end
 	
 	self:SetState( STATE_WAITINGFORPLAYERS )
@@ -232,7 +232,7 @@ function GM:WaitForPlayers()
 		
 	end
 	
-	local postwaitforplayers = hook.Run( "DM_PostWaitForPlayers" )
+	local postwaitforplayers = hook.Run( "IM_PostWaitForPlayers" )
 	if postwaitforplayers != nil then return postwaitforplayers end
 	
 end
@@ -374,7 +374,7 @@ end
 
 function GM:OnTeamsChanged( oldteams, newteams )
 	
-	local onteamschanged = hook.Run( "DM_OnTeamsChanged", oldteams, newteams )
+	local onteamschanged = hook.Run( "IM_OnTeamsChanged", oldteams, newteams )
 	if onteamschanged != nil then return onteamschanged end
 	
 	if CLIENT then return end

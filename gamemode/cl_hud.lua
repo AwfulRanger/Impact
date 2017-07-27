@@ -1,18 +1,18 @@
 DEFINE_BASECLASS( "gamemode_base" )
 
-surface.CreateFont( "DM_Bold", {
+surface.CreateFont( "IM_Bold", {
 	
 	font = "Roboto Bold",
 	size = ScreenScale( 24 ),
 	
 } )
-surface.CreateFont( "DM_BoldSmall", {
+surface.CreateFont( "IM_BoldSmall", {
 	
 	font = "Roboto Bold",
 	size = ScreenScale( 16 ),
 	
 } )
-surface.CreateFont( "DM_BoldTiny", {
+surface.CreateFont( "IM_BoldTiny", {
 	
 	font = "Roboto Bold",
 	size = ScreenScale( 8 ),
@@ -54,7 +54,7 @@ local function DrawHealth()
 	
 	local health = ply:Health()
 	if health <= 0 or ply:Alive() != true then health = "-" end
-	surface.SetFont( "DM_Bold" )
+	surface.SetFont( "IM_Bold" )
 	local tw, th = surface.GetTextSize( health )
 	
 	DrawShadowText( health, x + ( w * 0.5 ) - ( tw * 0.5 ), y + ( h * 0.5 ) - ( th * 0.5 ), altcolor )
@@ -80,7 +80,7 @@ local function DrawArmor()
 	draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, false, true, false, true )
 	
 	if armor <= 0 or ply:Alive() != true then armor = "-" end
-	surface.SetFont( "DM_Bold" )
+	surface.SetFont( "IM_Bold" )
 	local tw, th = surface.GetTextSize( armor )
 	
 	DrawShadowText( armor, x + ( w * 0.5 ) - ( tw * 0.5 ), y + ( h * 0.5 ) - ( th * 0.5 ), altcolor )
@@ -127,7 +127,7 @@ local function DrawAmmo()
 	
 	if clip < 0 or ammo == "-" then
 		
-		surface.SetFont( "DM_Bold" )
+		surface.SetFont( "IM_Bold" )
 		
 		if clip >= 0 and blacklist[ weapon:GetClass() ] != true and ammo == "-" then ammo = clip end
 		
@@ -137,7 +137,7 @@ local function DrawAmmo()
 		
 	else
 		
-		surface.SetFont( "DM_BoldSmall" )
+		surface.SetFont( "IM_BoldSmall" )
 		
 		local clipw, cliph = surface.GetTextSize( clip )
 		local ammow, ammoh = surface.GetTextSize( ammo )
@@ -185,7 +185,7 @@ local function DrawSecondaryAmmo()
 	
 	if clip < 0 or ammo == "-" then
 		
-		surface.SetFont( "DM_Bold" )
+		surface.SetFont( "IM_Bold" )
 		
 		if clip >= 0 and blacklist[ weapon:GetClass() ] != true and ammo == "-" then ammo = clip end
 		
@@ -195,7 +195,7 @@ local function DrawSecondaryAmmo()
 		
 	else
 		
-		surface.SetFont( "DM_BoldSmall" )
+		surface.SetFont( "IM_BoldSmall" )
 		
 		local clipw, cliph = surface.GetTextSize( clip )
 		local ammow, ammoh = surface.GetTextSize( ammo )
@@ -221,7 +221,7 @@ local function DrawDeathInfo( gm )
 	local x = ScrW() * 0.5
 	local y = ScrH() * 0.25
 	
-	surface.SetFont( "DM_BoldSmall" )
+	surface.SetFont( "IM_BoldSmall" )
 	
 	local text = "Respawning in " .. math.Round( ( ply.DeathTime + gm:GetRespawnTime() ) - CurTime() ) .. " seconds"
 	
@@ -262,7 +262,7 @@ local function DrawRoundInfo( gm )
 	local timestr = m .. ":" .. s
 	if time < 0 then timestr = "" end
 	
-	surface.SetFont( "DM_BoldSmall" )
+	surface.SetFont( "IM_BoldSmall" )
 	
 	local statew, stateh = surface.GetTextSize( text )
 	local timew, timeh = surface.GetTextSize( timestr )
@@ -368,14 +368,14 @@ function GM:HUDPaint()
 	
 	if ( plyteam == TEAM_RED or plyteam == TEAM_BLUE or plyteam == TEAM_FFA ) and self:GetRoundState() != STATE_WAITINGFORPLAYERS and ply:Alive() == true then
 		
-		if hook.Run( "HUDShouldDraw", "DM_Health" ) != false then DrawHealth() end
-		if hook.Run( "HUDShouldDraw", "DM_Armor" ) != false then DrawArmor() end
-		if hook.Run( "HUDShouldDraw", "DM_Ammo" ) != false then DrawAmmo() end
-		if hook.Run( "HUDShouldDraw", "DM_SecondaryAmmo" ) != false then DrawSecondaryAmmo() end
-		if ply:Alive() != true and hook.Run( "HUDShouldDraw", "DM_DeathInfo" ) != false then DrawDeathInfo( self ) end
+		if hook.Run( "HUDShouldDraw", "IM_Health" ) != false then DrawHealth() end
+		if hook.Run( "HUDShouldDraw", "IM_Armor" ) != false then DrawArmor() end
+		if hook.Run( "HUDShouldDraw", "IM_Ammo" ) != false then DrawAmmo() end
+		if hook.Run( "HUDShouldDraw", "IM_SecondaryAmmo" ) != false then DrawSecondaryAmmo() end
+		if ply:Alive() != true and hook.Run( "HUDShouldDraw", "IM_DeathInfo" ) != false then DrawDeathInfo( self ) end
 		
 	end
-	if hook.Run( "HUDShouldDraw", "DM_RoundInfo" ) != false then DrawRoundInfo( self ) end
+	if hook.Run( "HUDShouldDraw", "IM_RoundInfo" ) != false then DrawRoundInfo( self ) end
 	
 	return BaseClass.HUDPaint( self )
 	
@@ -408,7 +408,7 @@ end
 
 function GM:GetHelpPanel()
 	
-	local gethelppanel = hook.Run( "DM_GetHelpPanel" )
+	local gethelppanel = hook.Run( "IM_GetHelpPanel" )
 	if gethelppanel != nil then return gethelppanel end
 	
 	local help = vgui.Create( "DPanel" )
@@ -429,7 +429,7 @@ end
 
 function GM:GetTeamsPanel()
 	
-	local getteamspanel = hook.Run( "DM_GetTeamsPanel" )
+	local getteamspanel = hook.Run( "IM_GetTeamsPanel" )
 	if getteamspanel != nil then return getteamspanel end
 	
 	local teams = vgui.Create( "DPanel" )
@@ -497,7 +497,7 @@ end
 
 function GM:GetMenuPanel( tab )
 	
-	local getmenupanel = hook.Run( "DM_GetMenuPanel", tab )
+	local getmenupanel = hook.Run( "IM_GetMenuPanel", tab )
 	if getmenupanel != nil then return getmenupanel end
 	
 	if IsValid( self.MenuPanel ) != true then
@@ -512,7 +512,7 @@ function GM:GetMenuPanel( tab )
 		local show = vgui.Create( "DCheckBoxLabel" )
 		show:SetParent( panel )
 		show:Dock( BOTTOM )
-		show:SetConVar( "dm_showmenu" )
+		show:SetConVar( "im_showmenu" )
 		show:SetText( "Show menu when spawning for the first time" )
 		
 		local tabs = vgui.Create( "DPropertySheet" )
@@ -547,7 +547,7 @@ end
 
 function GM:InitPostEntity()
 	
-	if GetConVar( "dm_showmenu" ):GetBool() == true then self:ShowHelp() end
+	if GetConVar( "im_showmenu" ):GetBool() == true then self:ShowHelp() end
 	
 end
 
@@ -621,7 +621,7 @@ function GM:ScoreboardPlayer( ply, panel )
 	ping:SetParent( plybg )
 	ping:DockMargin( border * 4, 0, 0, 0 )
 	ping:Dock( RIGHT )
-	ping:SetFont( "DM_BoldTiny" )
+	ping:SetFont( "IM_BoldTiny" )
 	ping:SetText( "Ping: " .. tostring( ( ply:IsBot() == true and "BOT" ) or ply:Ping() ) )
 	ping:SizeToContents()
 	
@@ -629,7 +629,7 @@ function GM:ScoreboardPlayer( ply, panel )
 	deaths:SetParent( plybg )
 	deaths:DockMargin( border * 4, 0, 0, 0 )
 	deaths:Dock( RIGHT )
-	deaths:SetFont( "DM_BoldTiny" )
+	deaths:SetFont( "IM_BoldTiny" )
 	deaths:SetText( "Deaths: " .. ply:Deaths() )
 	deaths:SizeToContents()
 	
@@ -637,14 +637,14 @@ function GM:ScoreboardPlayer( ply, panel )
 	kills:SetParent( plybg )
 	kills:DockMargin( border * 4, 0, 0, 0 )
 	kills:Dock( RIGHT )
-	kills:SetFont( "DM_BoldTiny" )
+	kills:SetFont( "IM_BoldTiny" )
 	kills:SetText( "Kills: " .. ply:Frags() )
 	kills:SizeToContents()
 	
 	local name = vgui.Create( "DLabel" )
 	name:SetParent( plybg )
 	name:Dock( LEFT )
-	name:SetFont( "DM_BoldTiny" )
+	name:SetFont( "IM_BoldTiny" )
 	name:SetText( ply:Nick() )
 	name:SizeToContents()
 	
@@ -833,7 +833,7 @@ function GM:DrawDeathNotice( xr, yr )
 	local cx = ScrW() * 0.975
 	local y = ScrH() * 0.025
 	
-	surface.SetFont( "DM_BoldTiny" )
+	surface.SetFont( "IM_BoldTiny" )
 	
 	for i = 1, #self.DeathNotices do
 		
@@ -861,7 +861,7 @@ function GM:DrawDeathNotice( xr, yr )
 				
 				DrawShadowText( notice.attacker, x + border, y + ( h * 0.5 ) - ( ah * 0.5 ), team.GetColor( notice.ateam ) )
 				killicon.Draw( x + aw + ( kw * 0.5 ) + ( border * 2 ), y + ( h * 0.5 ), notice.inflictor, 255 )
-				surface.SetFont( "DM_BoldTiny" )
+				surface.SetFont( "IM_BoldTiny" )
 				DrawShadowText( notice.victim, x + aw + kw + ( border * 3 ), y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
 				
 				y = y + h + border
@@ -880,7 +880,7 @@ function GM:DrawDeathNotice( xr, yr )
 				draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, true, true, true, true )
 				
 				killicon.Draw( x + ( kw * 0.5 ) + ( border * 1 ), y + ( h * 0.5 ), notice.inflictor, 255 )
-				surface.SetFont( "DM_BoldTiny" )
+				surface.SetFont( "IM_BoldTiny" )
 				DrawShadowText( notice.victim, x + kw + ( border * 2 ), y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
 				
 				y = y + h + ( border * 3 )

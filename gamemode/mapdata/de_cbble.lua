@@ -4,7 +4,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2344, -2115, 0 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2773, -1457, 48 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1948, -375, 0 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2970, -427, 5 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -3298, 389, 0 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1598, -1319, 0 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -769, -1046, -128 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 321, -1209, -128 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1389, -1502, 0 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1005, -1655, 0 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -120, -305, 0 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 657, -343, 0 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -569, -225, 0 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -903, 201, 0 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -990, 1169, 64 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1852, 975, 4 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1422, 2558, 32 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1211, 2651, 320 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2247, 536, 96 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -291, 2136, -256 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -260, 1414, 0 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 376, 2691, 8 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1215, 2786, 128 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 394, 2316, 32 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -992, 2372, -256 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2525, 1636, 0 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 441, -319, -105 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_cbble" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1448, 1066, 64 ) },

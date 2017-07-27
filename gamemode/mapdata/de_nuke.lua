@@ -4,7 +4,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 3381, -908, -352 ) },
@@ -16,7 +16,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1870, -647, -352 ) },
@@ -28,7 +28,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 701, 826, -480 ) },
@@ -40,7 +40,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -132, -1282, -416 ) },
@@ -52,7 +52,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -1108, -1216, -379 ) },
@@ -64,7 +64,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -2432, -1198, -416 ) },
@@ -76,7 +76,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -191, -1040, -172 ) },
@@ -88,7 +88,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 67, -879, -96 ) },
@@ -100,7 +100,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 92, -1655, -47 ) },
@@ -112,7 +112,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1730, -907, -352 ) },
@@ -124,7 +124,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1950, -2067, -416 ) },
@@ -136,7 +136,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1607, -2275, -416 ) },
@@ -148,7 +148,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 110, -2019, -416 ) },
@@ -160,7 +160,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 762, -687, -416 ) },
@@ -172,7 +172,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 711, -696, -416 ) },
@@ -184,7 +184,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 386, -1066, -267 ) },
@@ -196,7 +196,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 187, -732, -288 ) },
@@ -208,7 +208,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 223, -1076, -288 ) },
@@ -220,7 +220,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2264, -1651, -416 ) },
@@ -232,7 +232,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 2244, -2311, -646 ) },
@@ -244,7 +244,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1139, -2028, -640 ) },
@@ -256,7 +256,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1124, -964, -768 ) },
@@ -268,7 +268,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1209, -458, -640 ) },
@@ -280,7 +280,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 137, -1493, -640 ) },
@@ -292,7 +292,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 644, -994, -768 ) },
@@ -304,7 +304,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 765, -469, -640 ) },
@@ -316,7 +316,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 459, -435, -640 ) },
@@ -328,7 +328,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( -132, -419, -416 ) },
@@ -340,7 +340,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 752, -2089, -416 ) },
@@ -352,7 +352,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1107, -1008, -416 ) },
@@ -364,7 +364,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1135, -745, -416 ) },
@@ -376,7 +376,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 1061, -1454, -104 ) },
@@ -388,7 +388,7 @@ GM.MapData[ "de_nuke" ] = {
 		
 		{
 			
-			Class = "dm_itemspawn",
+			Class = "im_itemspawn",
 			Functions = {
 				
 				SetPos = { Vector( 337, -1491, -128 ) },
