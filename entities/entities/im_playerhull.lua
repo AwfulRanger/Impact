@@ -54,8 +54,6 @@ function ENT:Think()
 	
 	if CLIENT then return end
 	
-	if IsValid( self:GetPhysicsAttacker() ) == true then print( self, self:GetPhysicsAttacker() ) end
-	
 	local owner = self:GetOwner()
 	if IsValid( owner ) == true and owner:IsPlayer() == true and owner:Alive() == true then
 		
@@ -77,7 +75,7 @@ function ENT:Think()
 		self.LastMin = min
 		self.LastMax = max
 		
-	elseif SERVER then
+	else
 		
 		self:Remove()
 		
