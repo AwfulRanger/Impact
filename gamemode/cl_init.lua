@@ -13,7 +13,7 @@ net.Receive( "IM_State", function()
 	if gm == nil then return end
 	
 	gm.RoundState = net.ReadInt( 32 )
-	gm.RoundTime = net.ReadInt( 32 )
+	gm.RoundTime = net.ReadFloat()
 	
 end )
 

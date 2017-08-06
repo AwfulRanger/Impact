@@ -73,6 +73,13 @@ end
 
 function GM:PlayerInitialSpawn( ply )
 	
+	net.Start( "IM_State" )
+		
+		net.WriteInt( self:GetRoundState(), 32 )
+		net.WriteFloat( self:GetRoundTime() )
+		
+	net.Send( ply )
+	
 	ply:SetTeam( TEAM_SPECTATOR )
 	self:PlayerSpawnAsSpectator( ply )
 	

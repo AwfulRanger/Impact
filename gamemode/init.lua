@@ -29,7 +29,7 @@ function GM:SetState( state )
 	net.Start( "IM_State" )
 		
 		net.WriteInt( self.RoundState, 32 )
-		net.WriteInt( self.RoundTime, 32 )
+		net.WriteFloat( self.RoundTime )
 		
 	net.Broadcast()
 	
