@@ -19,13 +19,33 @@ surface.CreateFont( "IM_BoldTiny", {
 	
 } )
 
-local function DrawShadowText( text, x, y, color, font )
+local function GetBorder()
+	
+	return math.Round( ScrH() * 0.005 )
+	
+end
+
+local alpha = 100
+local function GetColors( ply )
+	
+	local bgcolor = Color( 0, 0, 0, alpha )
+	local bordercolor = ply:GetTeamColor()
+	bordercolor.a = alpha
+	local altcolor = Color( 255, 255, 255, 255 )
+	
+	return bgcolor, bordercolor, altcolor
+	
+end
+
+local function DrawShadowText( text, x, y, color, font, shadowcolor )
 	
 	local shadow = math.ceil( ScrH() * 0.0025 )
 	
 	if font != nil then surface.SetFont( font ) end
 	
-	surface.SetTextColor( 0, 0, 0, 255 )
+	if shadowcolor == nil then shadowcolor = Color( 0, 0, 0, 255 ) end
+	
+	surface.SetTextColor( shadowcolor )
 	surface.SetTextPos( x + shadow, y + shadow )
 	surface.DrawText( text )
 	
@@ -39,10 +59,8 @@ local function DrawHealth()
 	
 	local ply = LocalPlayer()
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local x = ScrW() * 0.05
 	local y = ScrH() * 0.85
@@ -67,16 +85,14 @@ local function DrawArmor()
 	
 	local armor = ply:Armor()
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local x = ScrW() * 0.15 + border
 	local y = ScrH() * 0.85
 	local w = ScrW() * 0.1
 	local h = ScrH() * 0.1
-	draw.RoundedBoxEx( 16, x - border, y - border, w + ( border * 2 ), h + ( border * 2 ), bordercolor, false, true, false, true )
+	draw.RoundedBoxEx( 16, x, y - border, w + border, h + ( border * 2 ), bordercolor, false, true, false, true )
 	draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, false, true, false, true )
 	
 	if armor <= 0 or ply:Alive() != true then armor = "-" end
@@ -98,10 +114,8 @@ local function DrawAmmo()
 	
 	local ply = LocalPlayer()
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local weapon = ply:GetActiveWeapon()
 	
@@ -153,10 +167,8 @@ local function DrawSecondaryAmmo()
 	
 	local ply = LocalPlayer()
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local shadow = ScrH() * 0.005
 	local shadowcolor = Color( 0, 0, 0, 255 )
@@ -169,7 +181,7 @@ local function DrawSecondaryAmmo()
 	local y = ScrH() * 0.85
 	local w = ScrW() * 0.1
 	local h = ScrH() * 0.1
-	draw.RoundedBoxEx( 16, x - border, y - border, w + ( border * 2 ), h + ( border * 2 ), bordercolor, false, true, false, true )
+	draw.RoundedBoxEx( 16, x, y - border, w + border, h + ( border * 2 ), bordercolor, false, true, false, true )
 	draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, false, true, false, true )
 	
 	local display
@@ -213,10 +225,8 @@ local function DrawDeathInfo( gm )
 	
 	if ply.DeathTime == nil or CurTime() > ply.DeathTime + gm:GetRespawnTime() then return end
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local x = ScrW() * 0.5
 	local y = ScrH() * 0.25
@@ -244,10 +254,8 @@ local function DrawRoundInfo( gm )
 	
 	local ply = LocalPlayer()
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local state = gm:GetRoundState()
 	local text = translation[ STATE_WAITINGFORPLAYERS ]
@@ -323,6 +331,9 @@ local function DrawRoundInfo( gm )
 			enemycolor = team.GetColor( TEAM_FFA )
 			
 		end
+		
+		friendcolor.a = alpha
+		enemycolor.a = alpha
 		
 		local limitw = surface.GetTextSize( gm:GetScoreLimit() )
 		local maxw = surface.GetTextSize( 9999 )
@@ -559,13 +570,11 @@ end
 --yikes this is a mess
 
 local muted = Material( "icon16/sound_mute.png", "noclamp smooth" )
---local muted = Material( "icon16/sound_mute.png" )
 local unmuted = Material( "icon16/sound.png", "noclamp smooth" )
---local unmuted = Material( "icon16/sound.png" )
 
 function GM:ScoreboardPlayer( ply, panel )
 	
-	local border = math.Round( ScrH() * 0.005 )
+	local border = GetBorder()
 	
 	local plybg = vgui.Create( "DPanel" )
 	plybg:SetParent( panel )
@@ -674,10 +683,8 @@ function GM:ScoreboardShow()
 	
 	local ply = LocalPlayer()
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local plyteam = ply:Team()
 	local teams = self:GetTeams()
@@ -703,11 +710,14 @@ function GM:ScoreboardShow()
 		
 	end
 	
+	friendcolor.a = alpha
+	enemycolor.a = alpha
+	
 	self.ScoreboardPanel = vgui.Create( "DPanel" )
 	if teams == true then
 		
-		self.ScoreboardPanel:SetPos( ( ScrW() * 0.15 ) - border, ( ScrH() * 0.15 ) - border )
-		self.ScoreboardPanel:SetSize( ( ScrW() * 0.7 ) + ( border * 2 ), ( ScrH() * 0.7 ) + ( border * 2 ) )
+		self.ScoreboardPanel:SetPos( ( ScrW() * 0.15 ) - border, ( ScrH() * 0.175 ) - border )
+		self.ScoreboardPanel:SetSize( ( ScrW() * 0.7 ) + ( border * 2 ), ( ScrH() * 0.65 ) + ( border * 2 ) )
 		self.ScoreboardPanel.Paint = function( panel, w, h )
 			
 			draw.RoundedBoxEx( 16, 0, 0, w * 0.5, h, friendcolor, true, true, true, true )
@@ -828,10 +838,8 @@ function GM:DrawDeathNotice( xr, yr )
 	
 	local ply = LocalPlayer()
 	
-	local border = math.Round( ScrH() * 0.005 )
-	local bgcolor = Color( 0, 0, 0, 150 )
-	local bordercolor = ply:GetTeamColor()
-	local altcolor = Color( 255, 255, 255, 255 )
+	local border = GetBorder()
+	local bgcolor, bordercolor, altcolor = GetColors( ply )
 	
 	local cx = ScrW() * 0.975
 	local y = ScrH() * 0.025
@@ -854,39 +862,33 @@ function GM:DrawDeathNotice( xr, yr )
 				local kw, kh = killicon.GetSize( notice.inflictor )
 				local vw, vh = surface.GetTextSize( notice.victim )
 				
-				local w = aw + kw + vw + ( border * 4 )
-				local h = math.max( ah, kh, vh ) + ( border * 2 )
+				local w = aw + kw + vw
+				local h = math.max( ah, kh, vh )
 				
 				local x = cx - w
 				
-				draw.RoundedBoxEx( 16, x - border, y - border, w + ( border * 2 ), h + ( border * 2 ), bordercolor, true, true, true, true )
-				draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, true, true, true, true )
-				
-				DrawShadowText( notice.attacker, x + border, y + ( h * 0.5 ) - ( ah * 0.5 ), team.GetColor( notice.ateam ) )
-				killicon.Draw( x + aw + ( kw * 0.5 ) + ( border * 2 ), y + ( h * 0.5 ), notice.inflictor, 255 )
+				DrawShadowText( notice.attacker, x, y + ( h * 0.5 ) - ( ah * 0.5 ), team.GetColor( notice.ateam ) )
+				killicon.Draw( x + aw + ( kw * 0.5 ), y + ( h * 0.5 ), notice.inflictor, 255 )
 				surface.SetFont( "IM_BoldTiny" )
-				DrawShadowText( notice.victim, x + aw + kw + ( border * 3 ), y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
+				DrawShadowText( notice.victim, x + aw + kw, y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
 				
-				y = y + h + border
+				y = y + h
 				
 			else
 				
 				local kw, kh = killicon.GetSize( notice.inflictor )
 				local vw, vh = surface.GetTextSize( notice.victim )
 				
-				local w = kw + vw + ( border * 3 )
-				local h = math.max( kh, vh ) + ( border * 2 )
+				local w = kw + vw
+				local h = math.max( kh, vh )
 				
 				local x = cx - w
 				
-				draw.RoundedBoxEx( 16, x - border, y - border, w + ( border * 2 ), h + ( border * 2 ), bordercolor, true, true, true, true )
-				draw.RoundedBoxEx( 16, x, y, w, h, bgcolor, true, true, true, true )
-				
-				killicon.Draw( x + ( kw * 0.5 ) + ( border * 1 ), y + ( h * 0.5 ), notice.inflictor, 255 )
+				killicon.Draw( x + ( kw * 0.5 ), y + ( h * 0.5 ), notice.inflictor, 255 )
 				surface.SetFont( "IM_BoldTiny" )
-				DrawShadowText( notice.victim, x + kw + ( border * 2 ), y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
+				DrawShadowText( notice.victim, x + kw, y + ( h * 0.5 ) - ( vh * 0.5 ), team.GetColor( notice.vteam ) )
 				
-				y = y + h + ( border * 3 )
+				y = y + h
 				
 			end
 			
